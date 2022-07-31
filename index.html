@@ -15,7 +15,8 @@
 
   <body>
     <div class="hello-section">
-      <h1 class="hello-title">Hello</h1>
+      <h2 class="welcome-text">Hello, je m'appelle</h2>
+      <h1 class="title">Florent MENUS</h1>
       <h2 class="welcome-text">bienvenue sur mon portfolio !</h2>
     </div>
 
@@ -43,17 +44,33 @@
       </p>
     </div>
 
-    <div class="blackbar"></div>
-
     <div class="skills-section">
       <h2 class="skills-title section-title">Mes compétences</h2>
       <div class="skills-wrapper">
-        <img src="images/html.png" alt="HTML" />
-        <img src="images/css.png" alt="CSS" />
-        <img src="images/java-script.png" alt="JavaScript" />
-        <img src="images/react.png" alt="React.js" />
-        <img src="images/node.png" alt="Node.js" />
-        <img src="images/database.png" alt="Bases de données" />
+        <a
+          href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+          target="_blank"
+          ><img src="images/html.png" alt="HTML"
+        /></a>
+        <a
+          href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+          target="_blank"
+          ><img src="images/css.png" alt="CSS"
+        /></a>
+        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"
+          ><img src="images/java-script.png" alt="JavaScript"
+        /></a>
+        <a href="https://fr.wikipedia.org/wiki/React" target="_blank"
+          ><img src="images/react.png" alt="React.js"
+        /></a>
+        <a href="https://fr.wikipedia.org/wiki/Node.js" target="_blank"
+          ><img src="images/node.png" alt="Node.js"
+        /></a>
+        <a
+          href="https://fr.wikipedia.org/wiki/Structured_Query_Language"
+          target="_blank"
+          ><img src="images/database.png" alt="Bases de données"
+        /></a>
       </div>
     </div>
 
@@ -66,24 +83,44 @@
       <div class="contact-mail-div">
         <h2 class="contact-title section-title">Me contacter</h2>
         <form
+          class="contact-form"
           action="mailto:florent.mns@gmail.com"
           method="post"
           enctype="text/plain"
         >
-          <input type="text" name="name" /><br />
-          <input type="text" name="comment" size="50" /><br />
-          <input type="submit" value="Envoyer" />
+          <input
+            id="name-form"
+            type="text"
+            name="name"
+            placeholder="Votre nom/entreprise"
+          /><br />
+          <textarea
+            id="comment-form"
+            name="Message"
+            rows="10"
+            maxlength="1500"
+            placeholder="Ecrivez-moi un mail"
+            required
+          ></textarea>
+          <br />
+          <input id="submit-form" type="submit" value="Envoyer" />
         </form>
       </div>
       <div class="socials-div">
         <h2 class="socials-title">Mes réseaux</h2>
-        <div class="github">
-          <h3 class="social-name">Github</h3>
-          <img src="images/github.png" alt="Github" />
-        </div>
-        <div class="linkedin">
-          <img src="images/linkedin.png" alt="LinkedIn" />
-          <h3 class="social-name">LinkedIn</h3>
+        <div class="socials-wrapper">
+          <div class="social github">
+            <h3 class="social-name">Github</h3>
+            <a href="https://github.com/FloMenus" target="_blank"
+              ><img src="images/github.png" alt="Github"
+            /></a>
+          </div>
+          <div class="social linkedin">
+            <a href="https://www.linkedin.com/in/florent-menus/" target="_blank"
+              ><img src="images/linkedin.png" alt="LinkedIn"
+            /></a>
+            <h3 class="social-name">LinkedIn</h3>
+          </div>
         </div>
       </div>
     </div>

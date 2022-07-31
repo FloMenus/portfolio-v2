@@ -1,6 +1,9 @@
 /* font-family: 'Gruppo', cursive;
 font-family: 'Gudea', sans-serif;
 font-family: 'Open Sans', sans-serif; */
+
+/* FONTS */
+
 h1 {
   font-family: "Gudea", sans-serif;
   font-size: 120px;
@@ -20,13 +23,32 @@ h3 {
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
   letter-spacing: 0.06em;
 }
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* SCROLLBAR */
+body {
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  padding: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #0807087b; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgba(255, 255, 255, 0.502); /* creates padding around scroll thumb */
+  height: 20px;
+  width: 10px;
 }
 
 /* HELLO */
@@ -36,15 +58,24 @@ p {
   background: linear-gradient(270deg, #acc9ce 0.5%, #cccbaf 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0 auto;
-  padding-left: 10%
+  padding-left: 10%;
+  padding-top: 150px;
+}
+
+.title {
+  margin-bottom: 50px;
 }
 
 .welcome-text {
   color: #080708;
 }
 
+.welcome-text:first-of-type {
+  color: #080708;
+  font-size: 40px;
+}
 /* ABOUT */
 
 .about-section {
@@ -68,21 +99,12 @@ p {
   position: absolute;
   top: -140px;
   width: 100%;
-  height: 200p  x;
+  height: 200px;
 }
-/* .about-section::after {
-  content: "";
-  background-color: #262626;
-  display: block;
-  position: absolute;
-  bottom: -100px;
-  width: 100%;
-  height: 150px;
-} */
 
 .about-title {
   color: #ffffff;
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 .about-paragraph {
   width: 633px;
@@ -93,7 +115,7 @@ p {
 
 .skills-section {
   background: linear-gradient(270deg, #7474bf 0%, #348ac7 100%);
-  height: 1100px;
+  height: 900px;
   position: relative;
   padding-top: 200px;
 }
@@ -108,7 +130,7 @@ p {
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(2, 200px);
   grid-column-gap: 10%;
-  grid-row-gap: 150px;
+  grid-row-gap: 50px;
   margin: 80px 20px;
   align-items: center;
   justify-content: center;
@@ -131,7 +153,7 @@ p {
 .projects-section {
   position: relative;
   height: 1000px;
-  background: linear-gradient(270deg, #FDC830 2.55%, #6A82FB 102.55%);
+  background: linear-gradient(270deg, #fdc830 2.55%, #6a82fb 102.55%);
 }
 
 .projects-section::before {
@@ -145,10 +167,14 @@ p {
   height: 150px;
 }
 
+/* CAROUSEL */
+
+
+
 /* CONTACT */
 
 .contact-section {
-  height: 1000px;
+  height: 1200px;
   position: relative;
   background-color: #545454;
   padding-top: 100px;
@@ -163,4 +189,81 @@ p {
   width: 100%;
   height: 150px;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
 
+#name-form {
+  width: 500px;
+  padding: 20px;
+  background-color: #444343;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#name-form::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(156, 154, 154);
+}
+
+#comment-form {
+  width: 500px;
+  padding: 20px;
+  background-color: #444343;
+  border: none;
+  color: #ffffff;
+  resize: none;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#comment-form::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(156, 154, 154);
+  font-size: 25px;
+}
+
+#submit-form {
+  width: 50px;
+  align-items: flex-end;
+  background-color: #363636;
+  color: white;
+  padding: 15px 12px;
+  width: 120px;
+  border-radius: 100px;
+  border: none;
+  font-size: 25px;
+  font-family: "Gruppo", cursive;
+  color: #dbdbdb;
+}
+
+.socials-title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.socials-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.social img {
+  width: 100px;
+}
