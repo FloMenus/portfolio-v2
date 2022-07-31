@@ -43,6 +43,8 @@
       </p>
     </div>
 
+    <div class="blackbar"></div>
+
     <div class="skills-section">
       <h2 class="skills-title section-title">Mes compétences</h2>
       <div class="skills-wrapper">
@@ -55,15 +57,23 @@
       </div>
     </div>
 
-    <div class="projects-section section-title">
+    <div class="projects-section">
       <h2 class="projects-title"></h2>
       <!-- INSERER CAROUSSEL -->
     </div>
 
-    <div class="contact">
+    <div class="contact-section">
       <div class="contact-mail-div">
         <h2 class="contact-title section-title">Me contacter</h2>
-        <!-- INSERER ENVOIE D'EMAIL -->
+        <form
+          action="mailto:florent.mns@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <input type="text" name="name" /><br />
+          <input type="text" name="comment" size="50" /><br />
+          <input type="submit" value="Envoyer" />
+        </form>
       </div>
       <div class="socials-div">
         <h2 class="socials-title">Mes réseaux</h2>
