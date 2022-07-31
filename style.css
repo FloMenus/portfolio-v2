@@ -167,7 +167,32 @@ body::-webkit-scrollbar-thumb {
   height: 150px;
 }
 
-/* CAROUSEL */
+.projects-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  width: 600px;
+  height: 350px;
+  margin: 0% auto;
+  padding-top: 100px;
+  overflow-x: scroll;
+  overflow-y:hidden;
+}
+
+.projects-container2{
+  width: auto;
+  padding: 10px;
+  white-space:nowrap;
+  background-color: #4848486c;
+}
+.project {
+  width: 150px;
+  height: 300px;
+  background-color: #262626;
+  display: inline-block;
+  margin: 0px 20px;
+}
 
 
 
@@ -267,3 +292,7 @@ body::-webkit-scrollbar-thumb {
 .social img {
   width: 100px;
 }
+
+
+
+
