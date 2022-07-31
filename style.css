@@ -3,12 +3,12 @@ font-family: 'Gudea', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 h1 {
   font-family: "Gudea", sans-serif;
-  font-size: 140px;
+  font-size: 120px;
   color: #080708;
 }
 h2 {
   font-family: "Gruppo", cursive;
-  font-size: 96px;
+  font-size: 80px;
   color: #080708;
 }
 
@@ -32,14 +32,16 @@ p {
 /* HELLO */
 
 .hello-section {
-  height: 1200px;
+  height: 700px;
   background: linear-gradient(270deg, #acc9ce 0.5%, #cccbaf 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 auto;
+  padding-left: 10%
 }
-.hello-title {
-  padding: 20% 30% 0% 10%;
-}
+
 .welcome-text {
-  padding-left: 10%;
   color: #080708;
 }
 
@@ -110,5 +112,5 @@ p {
   justify-content: center;
 }
 .skills-wrapper img {
-  width: 200px;
+  width: 150px;
 }
